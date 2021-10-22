@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">   
+    <link rel="stylesheet" href="css/footer.css">
+    <title>끌레도르</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <h1 class="hidden">끌레도르</h1>
+        <div class="center">
+            <!-- 로고 이미지 -->
+            <a href="index.html"><img class="h-logo" src="img/logo/header_logo.png" alt="끌레도르 로고 이미지"></a>
+            <div class="h-menu-wrapper">
+                <!-- 네비게이터 -->
+                <nav class="nav">
+                    <h2 class="hidden">끌레도르 주요메뉴</h2>
+                    <ul>
+                        <li><a href="html/about.html">끌레도르</a></li>
+                        <li><a href="html/subscribe.html">정기구독신청</a></li>
+                        <li><a href="html/product.html">제품소개</a></li>
+                        <li><a href="html/board.html">고객센터</a></li>
+                    </ul>
+                </nav>
+                <!-- 유틸메뉴 -->
+                <dl>
+                    <dt class="hidden">유틸메뉴</dt>
+                    <dd><a href="#">로그인</a></dd>
+                    <dd><a href="#">마이페이지</a></dd>
+                    <dd><a href="#">장바구니<span>(0)</span></a></dd>
+                    <dd><a href="#">사이트맵</a></dd>
+                    <dd><a href="#"><span class="hidden">닫기</span><img src="img/main/close_icon.png" alt="닫기버튼아이콘"></a></dd>
+                </dl>
+            </div>
+            <div class="util-btn">
+                <button type="button" class="user-btn"><span class="hidden">메뉴버튼</span><i class="fas fa-user-circle"></i></button>
+                <button type="button" class="menu-btn"><span class="hidden">메뉴버튼</span><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- 메인 -->
+    <main>
+        <h2 class="hidden">끌레도르 메인 콘탠츠</h2>
+        <!-- 비디오 -->
+        <video class="main-video" autoplay muted controls loop>
+            <source src="video/cledor.mp4">
+        </video>
+        <!-- 신제품 섹션 -->
+        <section class="new-product">
+            <h2>신제품</h2>
+            <div class="new-textbox">
+                <div class="center">
+                    <img src="img/main/cledor_text.png" alt="Cledor">
+                    <p>유화제, 증점제, 합성향료를 뺀</p>
+                    <p>끌레도르 클린라벨 시리즈 출시</p>
+                    <p>깨끗하니까 기분이 좋아진다</p>
+                    <a href="#">지금 사러가기</a>
+                </div>
+            </div>
+        </section>
+        <!-- 제품소개 섹션 -->
+        <section class="intro-items">
+            <h2>제품소개</h2>
+            <div class="intro-bg"><span class="hidden">제품소개이미지</span></div>
+            <!-- 제품 리스트 슬라이더-->
+            <div class="swiper items-Swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <dl class="list1">
+                                <dt>쿠키앤크림</dt>
+                                <dd>
+                                    국내산 원유에 쿠키를 더한<br>
+                                    프리미엄 소프트콘
+                                </dd>
+                            </dl>
+                            <img src="img/main/item01.jpg" alt="쿠키앤크림 아이스크림 이미지">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <dl class="list2">
+                                <dt>옐로플룻</dt>
+                                <dd>
+                                    코코넛과 패션푸르츠 그리고<br>
+                                    레몬 샤베트의 조화
+                                </dd>
+                            </dl>
+                            <img src="img/main/item02.jpg" alt="옐로플룻 아이스크림 이미지">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <dl class="list3">
+                                <dt>초코브라우니</dt>
+                                <dd>
+                                    초코와 초코브라우니의<br>
+                                    조화로 더 진하게
+                                </dd>
+                            </dl>
+                            <img src="img/main/item03.jpg" alt="초코브라우니 아이스크림 이미지">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <dl class="list4">
+                                <dt>쇼콜라치즈케익</dt>
+                                <dd>
+                                    큼직한 치즈케익 조각과<br>
+                                    헤이즐넛 시럽을 듬뿍
+                                </dd>
+                            </dl>
+                            <img src="img/main/item04.jpg" alt="쇼콜라치즈케익 아이스크림 이미지">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <dl class="list5">
+                                <dt>레드카펫치즈케익</dt>
+                                <dd>
+                                    진한 치즈케익과 상큼한<br>
+                                    딸기 시럽으로 청키하게
+                                </dd>
+                            </dl>
+                            <img src="img/main/item05.jpg" alt="레드카펫치즈케익 아이스크림 이미지">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <dl class="list6">
+                                <dt>베리믹스</dt>
+                                <dd>
+                                    베리믹스 아이스크림으로<br>
+                                    달달 상큼하게
+                                </dd>
+                            </dl>
+                            <img src="img/main/item06.jpg" alt="베리믹스 아이스크림 이미지">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- 정기구독 섹션 -->
+        <section class="subscribe">
+            <h2 class="hidden">정기구독서비스</h2>
+            <div class="subscribe-bg"><span class="hiddden">정기구독서비스 이미지</span></div>
+            <div class="subscribe-container">
+                <!-- 정기구독 텍스트 섹션 -->
+                <p>매 달, 집으로 찾아가는 감동</p> 
+                <p><em>끌레도르 구독서비스</em> </p>               
+                <p><strong>끌레도르 정기구독이 좋은이유 !</strong></p>
+                <!-- 정기구독 카드 리스트 -->
+                <div class="subscribe-card">
+                    <div class="subscribe-list">
+                        <div><img src="img/main/icon_01.png" alt="다양한 상품구성 아이콘이미지"></div>
+                        <dl>
+                            <dt>다양한 상품구성</dt>
+                            <dd>3개월 동안 만나는<br>끌레도르의 전 라인업</dd>
+                        </dl>
+                    </div>
+                    <div class="subscribe-list">
+                        <div><img src="img/main/icon_02.png" alt="스페셜 기프트 아이콘이미지"></div>
+                        <dl>
+                            <dt>스페셜 기프트</dt>
+                            <dd>끌레도르만의<br>특별한 선물</dd>
+                        </dl>
+                    </div>
+                    <div class="subscribe-list">
+                        <div><img src="img/main/icon_03.png" alt="선택결제 시스템 아이콘이미지"></div>
+                        <dl>
+                            <dt>선택결제 시스템</dt>
+                            <dd>월 결제 또는 일괄결제<br>내게 맞는 결제방식 선택</dd>
+                        </dl>
+                    </div>
+                    <div class="subscribe-list">
+                        <div><img src="img/main/icon_04.png" alt="나에게 주는 선물 아이콘이미지"></div>
+                        <dl>
+                            <dt>나에게 주는 선물</dt>
+                            <dd>지친 일상을 위로할<br>달콤한 선물</dd>
+                        </dl>
+                    </div>
+                </div>
+                <a href="html/subscribe.html" class="subscribe-more">더 알아보기</a>
+            </div>
+        </section>
+        <!-- 인스타그램 섹션 -->
+        <section class="cledor-insta center">
+            <h2 class="hidden">인스타그램</h2>
+            <div>
+                <h2>instargram</h2>
+            </div>
+            <p>끌레도르와 함께하는 감동의 순간을 확인해보세요</p>
+            <div class="insta-img">
+                <a href="#"><img src="img/main/insta_1.jpg" alt="1번 끌레도르 고객 인스타그램"></a>
+                <a href="#"><img src="img/main/insta_2.jpg" alt="2번 끌레도르 고객 인스타그램"></a>
+                <a href="#"><img src="img/main/insta_3.jpg" alt="3번 끌레도르 고객 인스타그램"></a>
+                <a href="#"><img src="img/main/insta_4.jpg" alt="4번 끌레도르 고객 인스타그램"></a>
+                <a href="#"><img src="img/main/insta_5.jpg" alt="5번 끌레도르 고객 인스타그램"></a>
+                <a href="#"><img src="img/main/insta_6.jpg" alt="6번 끌레도르 고객 인스타그램"></a>
+                <a href="#"><img src="img/main/insta_7.jpg" alt="7번 끌레도르 고객 인스타그램"></a>
+                <a href="#"><img src="img/main/insta_8.jpg" alt="8번 끌레도르 고객 인스타그램"></a>
+            </div>
+        </section>
+        <!-- 위로가기 버튼 -->
+        <a href="toTop" class="to-top">TOP</a>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <h2 class="hidden">끌레도르 하단 회사정보 내용</h2>
+        <!-- 푸터 상단 -->
+        <div class="foot-top">
+            <address class="address-wrap center">
+                <div class="address">
+                    <p>
+                        (주) 빙그레   대표 : 전창원<br>
+                        주소 : 서울특별시 중구 서소문로11길 19<br>
+                        사업자등록번호 : 132-81-00631 [사업자정보확인]<br>
+                        통신판매업신고번호 : 다산-0172
+                    </p>
+                    <p>
+                        끌레도르 정기구독 서비스는 주식회사 제이앤에이치그룹에서 판매운영대행을 하고 있습니다.<br>
+                        주식회사 제이앤에이치그룹   대표 : 경중호<br>
+                        주소 : 서울특별시 성동구 아차산로7나길 18, APEXCENTER 1201-1호<br>
+                        사업자등록번호 : 864-88-01401 [사업자정보확인] 통신판매업신고번호 : 2019-서울성동-02251호<br>
+                        이메일 : cledor@jnhg.co.kr
+                    </p>
+                </div>
+                <div class="sns">
+                    <span>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    </span>
+                    <span>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                    </span>
+                </div>
+            </address>
+        </div>
+        <!-- 푸터 하단 -->
+        <div class="foot-bot">
+            <div class="center">
+                <div class="copyright">
+                    <dl>
+                        <dt class="hidden">하단 유틸메뉴</dt>
+                        <dd>Copyright(주)빙그레 All right reserved&nbsp;</dd>
+                        <dd><a href="#">/ 이용약관&nbsp;</a></dd>
+                        <dd><a href="#">/ 사이트맵&nbsp;</a></dd>
+                        <dd><a href="#">/ 개인정보취급방침</a></dd>
+                    </dl>
+                    <p>
+                        <span>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다.</span>
+                        <span>KG 이니시스 에스크로 (서비스가입사실확인)</span>
+                    </p>
+                </div>
+                <div class="service-center">
+                    <p>고객센터</p>
+                    <p>070-4333-8936</p>
+                    <a href="#">온라인문의</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main_slider.js"></script>
+    <script src="js/totop.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>
