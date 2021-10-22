@@ -1,0 +1,133 @@
+footer{
+    font-size: var(--font-size-12);
+    line-height: 1.9rem;
+}
+
+/* 푸터 상단 */
+footer > .foot-top{
+    padding: 2.5rem;
+    background: var(--color-vanilla);
+    color: var(--color-black);
+}
+footer .foot-top .address-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+footer .foot-top .address-wrap .address{
+    display: flex;
+    justify-content: space-between;
+}
+footer .foot-top .address-wrap .address P:first-of-type{
+    padding-right: 11rem;
+}
+footer .foot-top .address-wrap .sns{
+    display: flex;
+    gap:1rem;
+    font-size: 4.8rem;
+    color: var(--color-chocolate);
+}
+footer .foot-top .address-wrap .sns span{
+    display: flex;
+    gap: 1rem;
+}
+
+/* 푸터 하단 */
+footer .foot-bot{
+    padding: 1rem;
+    background: var(--color-chocolate);
+    color: var(--color-white);
+}
+footer .foot-bot > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .foot-bot > div > .copyright > dl{
+    display: flex;
+}
+footer .foot-bot > div > .copyright > p{
+    font-weight: bold;
+    line-height: 2.2rem;
+}
+footer .foot-bot > div > .service-center{
+    text-align: center;
+}
+footer .foot-bot > div > .service-center a{
+    display: inline-block;
+    width: 9rem;
+    height: 2.2rem;
+    border: 0.1rem solid #fff;
+}
+
+
+/* 미디어쿼리 */
+
+@media screen and (max-width:640px){ /* mobile */
+    
+    footer{
+        font-size: 1.1rem;
+    }
+    /* 푸터 상단 */
+    footer > .foot-top{
+        padding: 1.5rem;
+    }
+    footer .foot-top .address-wrap{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    footer .foot-top .address-wrap .address{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    footer .foot-top .address-wrap .sns{
+        padding-top: 1rem;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    footer .foot-top .address-wrap .sns span{
+        gap: 1rem;
+    }
+
+    /* 푸터 하단 */
+    footer .foot-bot{
+        padding: 1rem;
+    }
+    footer .foot-bot > div > .copyright > p{
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:641px){ /* Tablet */
+    
+    /* 푸터 상단 */
+    footer > .foot-top{
+        padding: 2rem;
+    }
+    footer .foot-top .address-wrap{
+        flex-direction: row;
+        align-items: center;
+    }
+    footer .foot-top .address-wrap .address{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    footer .foot-top .address-wrap .address P:first-of-type{
+        padding-right: 0;
+    }
+    footer .foot-top .address-wrap .sns{
+        gap:1rem;
+        flex-direction: column;
+    }
+    footer .foot-top .address-wrap .sns span{
+        gap: 1.5rem;
+    }
+
+    /* 푸터 하단 */
+    footer .foot-bot{
+        padding: 1rem;
+    }
+    footer .foot-bot > div > .copyright > p{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,176 @@
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 50%;
+    color: var(--color-black);
+    background-color: #fff;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+header > .center{
+    display: flex;
+    align-items: center;
+}
+
+/* 로고 이미지 */
+header .h-logo{
+    padding-top: 0.5rem;
+    width:12.8rem;
+    height: 8rem;
+}
+header .h-menu-wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* 네이게이터 */
+header .h-menu-wrapper .nav{
+    font-family: var(--Binggrea);
+    font-size: var(--font-size-20);
+}
+header .h-menu-wrapper .nav ul{
+    display: flex;
+    gap:3rem;
+    margin-left: 6.5rem;
+}
+header .h-menu-wrapper .nav ul a{
+    position: relative;
+    display: block;
+    line-height: 8rem;
+}
+/* 네비게이터 이벤트 */
+header .h-menu-wrapper .nav ul a:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom:2.5rem;
+    width: 100%;
+    height:0.2rem;
+    background: var(--color-red);
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+header .h-menu-wrapper .nav ul a:hover:after{
+    transform: scale(100%);
+}
+
+/* 유틸메뉴 */
+header .h-menu-wrapper dl{
+    display: flex;
+    gap:2rem;
+    font-size: var(--font-size-14);
+}
+header .h-menu-wrapper dl dd:last-of-type{
+    display: none;
+}
+header .h-menu-wrapper dl dd:last-of-type img{
+    width:15px;
+}
+/* 유틸메뉴 이벤트*/
+header .h-menu-wrapper dl dd:hover{
+    font-weight: bold;
+}
+
+/* 헤더 오른쪽 메뉴 버튼 */
+header button{
+    display: none;
+    font-size: 3rem;
+    background-color: #fff;
+    border:0 none;
+    cursor: pointer;
+}
+/* 미디어쿼리 */
+
+@media screen and (max-width:640px){ /* mobile */
+
+    header .h-logo{
+        width:9rem;
+        height: auto;
+    }
+    header .center{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .h-menu-wrapper{
+        position: absolute;
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: -50%;
+        background: #fff;
+        transition: all 0.3s ease-out;
+    }
+    header .h-menu-wrapper.active{
+        right: 0;
+    }
+    header .h-menu-wrapper .nav ul a:hover:after{
+        transform: scale(0);
+    }
+    header .h-menu-wrapper .nav ul{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 4rem;
+    }
+    header .h-menu-wrapper dl{
+        padding-bottom: 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .h-menu-wrapper dl dd:last-of-type{
+        display: block;
+        position: absolute;
+        top: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header .util-btn > .user-btn{
+        display: none;
+    }
+    header .util-btn > .menu-btn{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:641px){ /* Tablet */
+    header .h-menu-wrapper .nav ul{
+        margin-left: 1rem;
+        font-size: var(--font-size-16);
+    }
+    header .h-menu-wrapper dl{
+        position: absolute;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        padding:9rem 3rem;
+        background: #fff;
+        top: 0;
+        right: -30rem;
+        font-size: var(--font-size-20);
+        font-weight: bold;
+        gap: 4rem;
+        transition: all 0.3s ease-out;
+    }
+    header .h-menu-wrapper dl.active{
+        right: 0;
+    }
+    header .h-menu-wrapper dl dd:last-of-type{
+        display: block;
+        position: absolute;
+        top: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header .h-menu-wrapper{
+        justify-content: flex-end;
+    }
+    header button.user-btn{
+        display: block;
+        padding-left:3rem;
+    }
+}
+

@@ -1,0 +1,291 @@
+/* 고객센터 상단 배경 이미지 */
+section.notice > div:first-of-type{
+    width: 100%;
+    height:21.4rem;
+    background: url(../img/board/img_01.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+/* 공통사항 */
+
+section > h2{
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--font-size-36);
+    color: var(--color-dark-gray);
+}
+/* 버튼 */
+.btn-wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+.board-btn{
+    display: block;
+    padding: 0.9rem 1.5rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    font-size: var(--font-size-14);
+    font-weight: bold;
+    color: var(--color-black);
+    border:0.1rem solid var(--color-gray);
+}
+/* 테이블 */
+table{
+    border:0.1rem solid var(--color-gray);
+}
+table thead{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: var(--color-light-vanilla);
+    transform: skew(-0.1deg);
+}
+table tbody{
+    transform: skew(-0.1deg);
+}
+table th{
+    padding:1.2rem 0;
+}
+table td{
+    padding: 1.1rem 0;
+}
+table td:nth-of-type(1){
+    width:8rem;
+}
+table td:nth-of-type(3){
+    width:8.4rem;
+}
+table td:nth-of-type(4){
+    width:11.4rem;
+}
+table td:nth-of-type(5){
+    width:9rem;
+}
+table td{
+    font-size: var(--font-size-14);
+}
+table td:not(:nth-of-type(2)){
+    text-align: center;
+}
+/* 페이저 불릿 */
+.cle-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cle-pagination p {
+    margin:0 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.4rem;;
+    border: 0.1rem solid var(--color-gray);
+    border-radius: 50%;
+}
+.cle-pagination ul{
+    display: flex;
+    padding: 0 1rem;
+}
+.cle-pagination ul li.active a{
+    color: var(--color-white);
+    background: var(--color-chocolate);
+    border: 0.1rem solid var(--color-chocolate);
+}
+.cle-pagination ul a{
+    display: block;
+    margin:0 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.4rem;;
+    border: 0.1rem solid var(--color-gray);
+    border-radius: 50%;
+}
+
+/* 공지사항 섹션 */
+section.notice table > tbody > tr:first-of-type,
+section.notice table > tbody > tr:nth-of-type(2){
+    font-weight: bold;
+}
+
+/* 자주하는 질문과 답변 섹션 */
+section.faq .accodion > button{
+    width:100%;
+    padding: 1rem;
+    text-align: left;
+    text-indent: 1.5rem;
+    font-size: var(--font-size-14);
+    font-weight: bold;
+    transform: skew(-0.1deg);
+    border:0.1rem solid var(--color-gray);
+    background: url(../img/board/arrow_down.png)no-repeat 98% 50%,#fff;
+    cursor: pointer;
+}
+section.faq .accodion > button.active{
+    font-weight: bold;
+    background: url(../img/board/arrow_up.png)no-repeat 98% 50%,var(--color-vanilla);
+}
+section.faq .accodion > p{
+    display: none;
+    border-left: 0.1rem solid var(--color-gray);
+    border-right: 0.1rem solid var(--color-gray);
+    border-bottom: 0.1rem solid var(--color-gray);
+    padding: 2.5rem;
+    font-size: var(--font-size-14);
+    line-height: 2.5rem;
+}
+section.faq .accodion > p span{
+    color: var(--color-red);
+    font-weight: bold;
+}
+section.faq .accodion > p a{
+    color: blue;
+    font-weight: bold;
+}
+/* Q & A 섹션 자물쇠 아이콘 */
+section.qna table i {
+    padding-right: 2rem;
+}
+
+
+
+/* 미디어쿼리 */
+
+@media screen and (max-width:640px){ /* mobile 반응형 화면 여백*/
+    
+    /* 고객센터 상단 배경 이미지 */
+    section.notice > div:first-of-type{
+        height:14rem;
+    }
+
+    /* 공통사항 */
+    section > h2{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: var(--font-size-20);
+    }
+    /* 버튼 */
+    .board-btn{
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: var(--font-size-10);
+    }
+    /* 테이블 */
+    table thead{
+        font-size: 1rem;
+    }
+    table th{
+        padding:0.7rem 0;
+    }
+    table td:nth-of-type(1){
+        width:4rem;
+    }
+    table td:nth-of-type(3){
+        width:6rem;
+    }
+    table td:nth-of-type(4){
+        width:7rem;
+    }
+    table td:nth-of-type(5){
+        width:4rem;
+    }
+    table td{
+        padding: 0.4rem 0;
+        font-size: var(--font-size-10);
+        line-height: 1.6rem;
+    }
+    /* 페이저 불릿 */
+    .cle-pagination{
+        margin-top: 1rem;
+    }
+    /* 자주하는 질문과 답변 섹션 */
+    section.faq .accodion > button{
+        font-size: var(--font-size-12);
+    }
+    section.faq .accodion > p{
+        display: none;
+        padding: 2rem;
+        font-size: var(--font-size-10);
+        line-height: 1.9rem;
+    }
+    /* Q & A 섹션 자물쇠 아이콘 */
+    section.qna table i {
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:641px){ /* Tablet 반응형 화면 여백 */
+    
+    /* 고객센터 상단 배경 이미지 */
+    section.notice > div:first-of-type{
+        height:18rem;
+    }
+
+    /* 공통사항 */
+    section > h2{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        font-size: var(--font-size-24);
+    }
+    /* 버튼 */
+    .board-btn{
+        padding: 0.9rem 1.5rem;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        font-size: var(--font-size-14);
+        font-weight: bold;
+        color: var(--color-black);
+        border:0.1rem solid var(--color-gray);
+    }
+    /* 테이블 */
+    table{
+        border:0.1rem solid var(--color-gray);
+    }
+    table thead{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    table th{
+        padding:1rem 0;
+    }
+    table td:nth-of-type(1){
+        width:6rem;
+    }
+    table td:nth-of-type(3){
+        width:8rem;
+    }
+    table td:nth-of-type(4){
+        width:9rem;
+    }
+    table td:nth-of-type(5){
+        width:6rem;
+    }
+    table td{
+        padding: 1rem 0;
+        font-size: var(--font-size-12);
+    }
+    /* 페이저 불릿 */
+    .cle-pagination{
+        margin-top: 1rem;
+    }
+    /* 자주하는 질문과 답변 섹션 */
+    section.faq .accodion > button{
+        font-size: var(--font-size-14);
+    }
+    section.faq .accodion > p{
+        display: none;
+        padding: 2rem;
+        font-size: var(--font-size-12);
+        line-height: 2.2rem;
+    }
+    /* Q & A 섹션 자물쇠 아이콘 */
+    section.qna table i {
+        padding-right: 2rem;
+    }
+
+}
