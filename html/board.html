@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/board.css">   
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>끌레도르</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <h1 class="hidden">끌레도르</h1>
+        <div class="center">
+            <!-- 로고 이미지 -->
+            <a href="../index.html"><img class="h-logo" src="../img/logo/header_logo.png" alt="끌레도르 로고 이미지"></a>
+            <div class="h-menu-wrapper">
+                <!-- 네비게이터 -->
+                <nav class="nav">
+                    <h2 class="hidden">끌레도르 주요메뉴</h2>
+                    <ul>
+                        <li><a href="about.html">끌레도르</a></li>
+                        <li><a href="subscribe.html">정기구독신청</a></li>
+                        <li><a href="product.html">제품소개</a></li>
+                        <li><a href="board.html">고객센터</a></li>
+                    </ul>
+                </nav>
+                <!-- 유틸메뉴 -->
+                <dl>
+                    <dt class="hidden">유틸메뉴</dt>
+                    <dd><a href="#">로그인</a></dd>
+                    <dd><a href="#">마이페이지</a></dd>
+                    <dd><a href="#">장바구니<span>(0)</span></a></dd>
+                    <dd><a href="#">사이트맵</a></dd>
+                    <dd><a href="#"><span class="hidden">닫기</span><img src="../img/main/close_icon.png" alt="닫기버튼아이콘"></a></dd>
+                </dl>
+            </div>
+            <div class="util-btn">
+                <button type="button" class="user-btn"><span class="hidden">메뉴버튼</span><i class="fas fa-user-circle"></i></button>
+                <button type="button" class="menu-btn"><span class="hidden">메뉴버튼</span><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- 메인 -->
+    <main>
+        <h2 class="hidden">끌레도르 고객센터 콘텐츠</h2>
+        <!-- 공지사항 -->
+        <section class="notice center">
+            <div><span class="hidden">고객센터 상단 이미지</span></div>
+            <h2>공지사항</h2>
+            <table class="center">
+                <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col">조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>공지</td>
+                        <td><a href="#">[공지] 2021년 4월 정기구독 변경점 안내</a></td>
+                        <td>끌레도르</td>
+                        <td><time datetime="2021-03-25">2021-03-25</time></td>
+                        <td>1798</td>
+                    </tr>
+                    <tr>
+                        <td>공지</td>
+                        <td><a href="#">[공지] 제품 문의 안내</a></td>
+                        <td>끌레도르</td>
+                        <td><time datetime="2020-09-28">2020-09-28</time></td>
+                        <td>565</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="#">[공지] 2021년 정기구독 구성 변경 안내</a></td>
+                        <td>끌레도르</td>
+                        <td><time datetime="2020-12-30">2020-12-30</time></td>
+                        <td>398</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="#">[이벤트] 친구와 함께 구독하면 첫 달 100원(종료)</a></td>
+                        <td>끌레도르</td>
+                        <td><time datetime="2020-11-05">2020-11-05</time></td>
+                        <td>3198</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="#">[당첨자 발표] 순금 이벤트 10월 당첨자 안내</a></td>
+                        <td>끌레도르</td>
+                        <td><time datetime="2020-11-03">2020-11-03</time></td>
+                        <td>2144</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="#">[이벤트] 순금 한 돈 쏜다(종료)</a></td>
+                        <td>끌레도르</td>
+                        <td><time datetime="2020-09-23">2020-09-23</time></td>
+                        <td>918</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-wrap">
+                <a href="#" class="board-btn">목록보기</a>
+            </div>
+            <div class="cle-pagination">
+                <p><a href="#"><span class="hidden">첫번째 목록으로 이동</span><i class="fas fa-arrow-left"></i></a></p>
+                <p><a href="#"><span class="hidden">이전 목록으로 이동</span><i class="fas fa-chevron-left"></i></a></p>
+                <ul class="bullet">
+                    <li class="active"><a href="#">1</a></li>
+                </ul>
+                <p><a href="#"><span class="hidden">다음 목록으로 이동</span><i class="fas fa-chevron-right"></i></a></p>
+                <p><a href="#"><span class="hidden">마지막 목록으로 이동</span><i class="fas fa-arrow-right"></i></a></p>
+            </div>
+        </section>
+        <!-- 자주하는 질문과 답변 -->
+        <section class="faq center">
+            <h2>자주하는 질문과 답변</h2>
+            <div class="accodion">
+                <button type="button">사은품이 안 왔어요.</button>
+                <p>
+                    누락이 아니니 안심하세요.<br>
+                    최상의 상태로 받아보실 아이스크림을 우선적으로 배송하기 때문에 구독 선물과 동시에 도착하지 않을수 있습니다.<br>
+                    구독 선물은 아이스크림 본품과 별도의 택배로 택배사의 사정에 따라 최대 2일 까지의 텀을 두고 도착할수 있습니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">파손 상품은 보상이 되나요?</button>
+                <p>
+                    상품이 완벽하지 못한 상태로 도착했다면 대표전화, 채널톡, 홈페이지 1:1문의를 통해 알려주시면 곧바로 교환을 해드립니다.<br>
+                    고객님의 만족을 최우선으로 하는 끌레도르 정기구독이 되겠습니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기구독 상품은 어떻게 배송되나요?</button>
+                <p>
+                    저희 끌레도르는 출고 후 익일 배송완료를 원칙으로 합니다.<br>
+                    배송택배사 : CJ대한통운 또는 롯데택배<br>
+                    택배로 배송되는 만큼 배송 지역 배송 상황에 따라<br>
+                    배송시간 지정은 어렵습니다.<br>
+                    모든 고객님들께서 안전하게 받으실 수 있도록<br>
+                    최선을 다하겠습니다!
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">스페셜 기프트는 어떻게 배송되나요?</button>
+                <p>
+                    정기구독 상품 구매시 증정되는 스페셜 기프트는<br>
+                    본품(아이스크림) 배송과는 별도로 택배 배송 됩니다.<br>
+                    본품과 함께 수령하실 수 있도록 발송되지만,<br>
+                    배송 상황에 따라 최종 수령시간은 차이가 있을 수 있으니 조금만 기다려 주세요.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기구독 출고 일정이 궁금해요.</button>
+                <p>
+                    결제일 또는 1개월 차 출고일을 기준으로2개월 차, 3개월 차 출고 일정이 자동으로 정해져요.<br>
+                    상품은 출고일 기준으로 다음날 받아 보실 수 있어요.<br>
+                    <span>정기결제(월 결제)</span><br>
+                    월~일요일 주문건에 대해서 차주 수요일 1개월차 상품을 배송 받으실 수 있습니다.<br>
+                    매월 달라지는 결제일에 따라 2개월 차, 3개월 차 상품은 결제일 기준 다음 주 수요일로 배송 완료일이 정해 집니다.<br>
+                    <span>선결제(일괄결제)</span><br>
+                    월~일요일 주문건에 대해서 차주 수요일 1개월차 상품을 배송 받으실 수 있습니다.<br>
+                    2개월 차, 3개월 차는 첫 배송일을 기준으로 4주 단위로 계산되어 지정 배송됩니다.<br>             
+                    *선결제 상품은 네이버 스마트 스토어를 통해 구매가능<br>
+                    <a href="#">선결제 구매하기 [자세히보기]</a>
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기구독을 해지하고 싶어요.</button>
+                <p>
+                    정기구독 중도 해지를 원하실 경우 1:1 문의 게시판 및 고객센터를 통해 연락 부탁드립니다.<br>
+                    해지 전까지 받아보신 기프트 금액에 대해 별도 결제 후 해지 가능하오니 참고 부탁드리겠습니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기구독 중 배송지 변경이 필요해요.</button>
+                <p>
+                    마이페이지 > 정기구독관리 > 주문건 상세조회 > 수령자 정보 변경] 에서 가능합니다.<br>
+                    단, 출고일 당일 또는 배송 준비상태인 주문건은 이미 배송이 시작된 상황으로 변경이 어렵습니다.<br>
+                    반드시 미리 변경 부탁드립니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기구독 중 일시중지 신청이 가능한가요?</button>
+                <p>
+                    죄송합니다. 일시중지는 어렵습니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기구독 상품구성 변경이 가능한가요?</button>
+                <p>
+                    죄송합니다. 구성변경은 어렵습니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">비회원 주문은 안 되나요?</button>
+                <p>
+                    정기결제 상품은 회원 가입 후 주문만 가능합니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">카드 전표/거래명세서를 인쇄하고 싶어요</button>
+                <p>
+                    마이페이지 일반주문조회 탭에서 주문상품번호를 선택하시면 주문 상세페이지 가장 아래에 인쇄 버튼이 있습니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">선결제 주문은 조회가 안 돼요</button>
+                <p>
+                    3개월 선결제 주문의 경우 네이버페이를 통해 결제되기 때문에 끌레도르 홈페이지에서 정기구독정보 조회를 하실수 없습니다.<br>
+                    네이버페이로 진행되는 선결제 주문은 네이버 마이쇼핑을 통해서 주문 조회가 가능합니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기구독이 뭐예요?</button>
+                <p>
+                    구매 월로부터 3개월 동안 매달 상품을 다양하게 받아 보시는 배송형태로 끌레도르 정기구독에는 두 가지 결제방법를 선택할 수 있어요.<br>
+                    <span>첫번째</span><br>
+                    결제와 배송이 3개월 동안 매 월마다 진행되는 정기결제 형태.<br>
+                    <span>두번째</span><br>
+                    처음 결제시 선결제 후 매 월 배송 받는 일괄결제 형태.<br>
+                    원하시는 결제 형태를 결정하시어 해당 상품을 구매해 주세요.<br>
+                    <a href="#">정기구독 신청하기 [자세히보기]</a>
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기구독 결제는 어떻게 되나요?</button>
+                <p>
+                    정기결제는 신용카드 결제만 가능하며, 처음 주문서 작성시 지정한 날짜로 3개월간 동일한 날짜에 동일한 금액이 결제되요.<br>
+                    <span>정기결제</span><br>
+                    1개월 차 - 9월 11일(19,900원)<br>
+                    2개월 차 - 10월 11일(19,900원)<br>
+                    3개월 차 - 11월 11일(19,900원)<br>
+                    ※ 신청 후 3개월 동안 자동결제가 이루어 지니 유효기간이 넉넉한 신용카드 사용을 부탁드립니다.<br>
+                    서비스 도중 카드 문제로 인해 결제가 누락된 경우 해당 회차 서비스는 다음 달로 이월 됩니다.<br>
+                    <span>선결제</span><br>
+                    3개월 총 금액을 선결제 후 3개월 동안 매월 정기적으로 아이스크림을 배송 받는 방법이에요.<br>
+                    *선결제 상품은 네이버 스마트 스토어를 통해 구매가능<br>
+                    <a href="#">선결제 구매하기 [자세히보기]</a>
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">배송 일정 변경 가능한가요?</button>
+                <p>
+                    정말 죄송합니다.<br>
+                    배송일정 변경은 어렵습니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">결제 수단에 대해 알려주세요.</button>
+                <p>
+                    매달 자동으로 결제되는 정기결제를 신청하신 경우엔 신용카드 결제만 가능합니다.<br>
+                    선결제 상품은 네이버 스마트스토어에서 구매 가능하며 다양한 결제방법을 선택하실 수 있습니다.<br>
+                    <a href="#">선결제 구매하기 [자세히보기]</a>
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">정기결제 신용카드 변경이 가능한가요?</button>
+                <p>
+                    정기결제 신용카드 변경은 [ 마이페이지 > 정기구독 관리 ] 에서 가능합니다.
+                </p>
+            </div>
+            <div class="accodion">
+                <button type="button">월 자동결제시 카드결제 시간을 알고 싶어요.</button>
+                <p>
+                    지정된 결제일 오전 중 순차적으로 결제가 진행되며, 일 1회 진행됩니다.<br>
+                    카드 문제로 인해 결제가 누락된 경우 해당 회차 서비스는 다음달로 이월 됩니다.<br>
+                    신청 후 3개월 동안 자동결제가 이루어 지니 유효기간이 넉넉한 신용카드를 사용 부탁드립니다.
+                </p>
+            </div>
+        </section>
+        <!-- QNA -->
+        <section class="qna center">
+            <h2>Q & A</h2>
+            <table class="center">
+                <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col">작성일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10</td>
+                        <td><a href="#"><i class="fas fa-lock"></i>6개월이상 어떻게 결제하나요..?</a></td>
+                        <td>김****</td>
+                        <td><time datetime="2021-02-16">2021-02-16</time></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><a href="#"><i class="fas fa-lock"></i>안녕하세요 ~</a></td>
+                        <td>이****</td>
+                        <td><time datetime="2021-02-17">2021-02-17</time></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><a href="#"><i class="fas fa-lock"></i>신청!!</a></td>
+                        <td>김****</td>
+                        <td><time datetime="2021-02-10">2021-02-10</time></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><a href="#"><i class="fas fa-lock"></i>배송 일정 변경 가능한가요..?</a></td>
+                        <td>정****</td>
+                        <td><time datetime="2021-02-15">2021-02-15</time></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href="#"><i class="fas fa-lock"></i>비회원 주문 안되는건가요?</a></td>
+                        <td>민****</td>
+                        <td><time datetime="2021-02-03">2021-02-03</time></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-wrap">
+                <a href="#" class="board-btn">목록보기</a>
+                <a href="#" class="board-btn">글쓰기</a>
+            </div>
+            <div class="cle-pagination">
+                <p><a href="#"><span class="hidden">첫번째 목록으로 이동</span><i class="fas fa-arrow-left"></i></a></p>
+                <p><a href="#"><span class="hidden">이전 목록으로 이동</span><i class="fas fa-chevron-left"></i></a></p>
+                <ul class="bullet">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                </ul>
+                <p><a href="#"><span class="hidden">다음 목록으로 이동</span><i class="fas fa-chevron-right"></i></a></p>
+                <p><a href="#"><span class="hidden">마지막 목록으로 이동</span><i class="fas fa-arrow-right"></i></a></p>
+            </div>
+        </section>
+        <!-- 위로가기 버튼 -->
+        <a href="toTop" class="to-top">TOP</a>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <h2 class="hidden">끌레도르 하단 회사정보 내용</h2>
+        <!-- 푸터 상단 -->
+        <div class="foot-top">
+            <address class="address-wrap center">
+                <div class="address">
+                    <p>
+                        (주) 빙그레   대표 : 전창원<br>
+                        주소 : 서울특별시 중구 서소문로11길 19<br>
+                        사업자등록번호 : 132-81-00631 [사업자정보확인]<br>
+                        통신판매업신고번호 : 다산-0172
+                    </p>
+                    <p>
+                        끌레도르 정기구독 서비스는 주식회사 제이앤에이치그룹에서 판매운영대행을 하고 있습니다.<br>
+                        주식회사 제이앤에이치그룹   대표 : 경중호<br>
+                        주소 : 서울특별시 성동구 아차산로7나길 18, APEXCENTER 1201-1호<br>
+                        사업자등록번호 : 864-88-01401 [사업자정보확인] 통신판매업신고번호 : 2019-서울성동-02251호<br>
+                        이메일 : cledor@jnhg.co.kr
+                    </p>
+                </div>
+                <div class="sns">
+                    <span>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    </span>
+                    <span>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                    </span>
+                </div>
+            </address>
+        </div>
+        <!-- 푸터 하단 -->
+        <div class="foot-bot">
+            <div class="center">
+                <div class="copyright">
+                    <dl>
+                        <dt class="hidden">하단 유틸메뉴</dt>
+                        <dd>Copyright(주)빙그레 All right reserved&nbsp;</dd>
+                        <dd><a href="#">/ 이용약관&nbsp;</a></dd>
+                        <dd><a href="#">/ 사이트맵&nbsp;</a></dd>
+                        <dd><a href="#">/ 개인정보취급방침</a></dd>
+                    </dl>
+                    <p>
+                        <span>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다.</span>
+                        <span>KG 이니시스 에스크로 (서비스가입사실확인)</span>
+                    </p>
+                </div>
+                <div class="service-center">
+                    <p>고객센터</p>
+                    <p>070-4333-8936</p>
+                    <a href="#">온라인문의</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 스크립트 -->
+    <script src="../js/totop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/accodion.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

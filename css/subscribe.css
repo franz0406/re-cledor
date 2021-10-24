@@ -1,0 +1,389 @@
+/* 상단 이미지 */
+.subscribe-bg-top{
+    width: 100%;
+    height: 64rem;
+    background: url(../img/subscribe/subscribe_bg-top.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* 정기구독 아이콘 박스 */
+.cledor-subscribe {
+    position: relative;
+}
+.cledor-subscribe > .subscribe-icon-box{
+    position: absolute;
+    top: -42rem;
+    left: 50%;
+    transform: translateX(-50%);
+}.cledor-subscribe > .subscribe-icon-box > h3{
+    text-align: center;
+    font-weight:bold;
+}
+.cledor-subscribe > .subscribe-icon-box > h3 span:first-of-type{
+    display: block;
+    padding-bottom: 1.5rem;
+    font-size: var(--font-size-20);
+    color: var(--color-red);
+}
+.cledor-subscribe > .subscribe-icon-box > h3 span:last-of-type{
+    font-size: var(--font-size-36);
+    color: var(--color-chocolate);
+}
+.cledor-subscribe > .subscribe-icon-box > ul{
+    padding-top: 4.5rem;
+    width: 74.4rem;
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cledor-subscribe > .subscribe-icon-box > ul > li > img{
+    border:0.1rem solid var(--color-red);
+}
+.cledor-subscribe > .subscribe-icon-box > ul > li > p:first-of-type{
+    padding-top:2rem;
+    font-size: var(--font-size-16);
+    font-weight: 800;
+    color: var(--color-black);
+}
+.cledor-subscribe > .subscribe-icon-box > ul > li > p:last-of-type{
+    padding-top:1.5rem;
+    font-size: var(--font-size-14);
+    line-height: 2.2rem;
+    color: var(--color-dark-gray);
+}
+/* 결제하기 박스 */
+.cledor-subscribe > .payment-wrap{
+    margin-top: 21.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: var(--shadow);
+}
+.cledor-subscribe > .payment-wrap .price-txt{
+    padding-top:4.8rem;
+    padding-bottom:2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-14);
+    color: var(--color-black);
+}
+.cledor-subscribe > .payment-wrap .price-txt > p:first-of-type b{
+    padding-right: 2rem;
+    font-weight: bold;
+}
+.cledor-subscribe > .payment-wrap .price-txt > p:first-of-type span{
+    color: var(--color-red);
+    font-weight: bold;
+}
+.cledor-subscribe > .payment-wrap .price-txt > p:last-of-type{
+    position: relative;
+}
+.cledor-subscribe > .payment-wrap .price-txt > p:last-of-type::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -0.8rem;
+    width:0.3rem;
+    height:0.3rem;
+    background-color: black;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.cledor-subscribe > .payment-wrap .payment-box {
+    padding-bottom: 2.4rem;
+}
+.cledor-subscribe > .payment-wrap .payment-box > div{
+    display: flex;
+    border:0.1rem solid var(--color-gray);
+    text-align: center;
+}
+.cledor-subscribe > .payment-wrap .payment-box > div > div{
+    flex-basis: 50%;
+}
+.cledor-subscribe > .payment-wrap .payment-box > div > div p{
+    padding-top:2.5rem;
+    font-size: var(--font-size-16);
+    line-height: 2.5rem;
+}
+/* 결제하기 버튼 */
+.cledor-subscribe > .payment-wrap .payment-box > div > div a{
+    display:inline-block;
+    margin-top:1.2rem;
+    margin-bottom:2.2rem;
+    width:10rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: var(--color-chocolate);
+    background-color: var(--color-light-vanilla);
+    border:0.1rem solid var(--color-chocolate);
+    border-radius: 1.5rem;
+    transition: all 0.2s linear;
+}
+/* 결제하기 버튼 이벤트 */
+.cledor-subscribe > .payment-wrap .payment-box > div > div a:hover{
+    color: var(--color-chocolate);
+    background-color: var(--color-vanilla);
+    border:0.1rem solid var(--color-chocolate);
+}
+
+/* 정기구독 결제박스 밑 내용 컨탠츠 */
+section.cledor-service{
+    text-align: center;
+}
+section.cledor-service > .subscribe-bg-mid{
+    margin-top: 10rem;
+    width: 100%;
+    height: 41rem;
+    background: url(../img/subscribe/subscribe_bg-mid.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.cledor-service > p:first-of-type{
+    padding-top:7rem;
+    font-size: var(--font-size-36);
+    font-weight: bold;
+    color: var(--color-chocolate);
+}
+section.cledor-service > p:last-of-type{
+    padding-top:2.5rem;
+    padding-bottom:5rem;
+    font-size: var(--font-size-24);
+    font-weight: bold;
+    color: var(--color-dark-gray);
+}
+section.cledor-service > img:first-of-type{
+    box-shadow: var(--shadow);
+}
+section.cledor-service > .txt-box{
+    padding-top: 7rem;
+}
+section.cledor-service > .txt-box > p:first-of-type{
+    font-size: var(--font-size-36);
+    font-weight: bold;
+    line-height: 5.7rem;
+    color: var(--color-chocolate);
+}
+section.cledor-service > .txt-box > p:last-of-type{
+    padding-top: 2.5rem;
+    font-size: var(--font-size-24);
+    font-weight: bold;
+    line-height: 3.8rem;
+    color: var(--color-dark-gray);
+}
+section.cledor-service > .txt-box > img{
+    padding-top: 5rem;
+}
+
+
+
+/* 미디어쿼리 */
+
+@media screen and (max-width:640px){ /* mobile */
+    
+    /* 상단 이미지 */
+    .subscribe-bg-top{
+        height: 24rem;
+    }
+    /* 정기구독 아이콘 박스 */
+    .cledor-subscribe > .subscribe-icon-box{
+        top: -56rem;
+    }
+    .cledor-subscribe > .subscribe-icon-box > h3 span:first-of-type{
+        padding-bottom: 1rem;
+        font-size: var(--font-size-12);
+    }
+    .cledor-subscribe > .subscribe-icon-box > h3 span:last-of-type{
+        font-size: var(--font-size-20);
+    }
+    .cledor-subscribe > .subscribe-icon-box > ul{
+        padding-top: 2.5rem;
+        width: 27.8rem;
+    }
+    .cledor-subscribe > .subscribe-icon-box > ul > li > img{
+        width: 13rem;
+    }
+    .cledor-subscribe > .subscribe-icon-box > ul > li > p:first-of-type{
+        font-size: var(--font-size-14);
+    }
+    .cledor-subscribe > .subscribe-icon-box > ul > li > p:last-of-type{
+        padding-top:1.3rem;
+        font-size: var(--font-size-12);
+        line-height: 1.9rem;
+    }
+    /* 결제하기 박스 */
+    .cledor-subscribe > .payment-wrap{
+        margin-top: 50rem;
+        flex-direction: column;
+    }
+    .cledor-subscribe > .payment-wrap > .payment-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cledor-subscribe > .payment-wrap .price-txt{
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top:1.8rem;
+        padding-bottom:1rem;
+        font-size: var(--font-size-12);
+    }
+    .cledor-subscribe > .payment-wrap .price-txt > p:last-of-type{
+        padding-top: 1rem;
+    }
+    .cledor-subscribe > .payment-wrap .price-txt > p:last-of-type::before{
+        display: none;
+    }
+    .cledor-subscribe > .payment-wrap .payment-box > img{
+        width: 100%;
+    }
+    .cledor-subscribe > .payment-wrap .payment-box > div > div p{
+        padding-top:1rem;
+        font-size: var(--font-size-12);
+        line-height: 1.9rem;
+    }
+    /* 결제하기 버튼 */
+    .cledor-subscribe > .payment-wrap .payment-box > div > div a{
+        margin-top:1.2rem;
+        margin-bottom:1.9rem;
+        width:7rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    /* 정기구독 결제박스 밑 내용 컨탠츠 */
+    section.cledor-service > .subscribe-bg-mid{
+        margin-top: 3rem;
+        height: 20rem;
+    }
+    section.cledor-service > p:first-of-type{
+        padding-top:2rem;
+        font-size: var(--font-size-16);
+        font-weight: normal;
+    }
+    section.cledor-service > p:last-of-type{
+        padding-top:1.5rem;
+        padding-bottom:2rem;
+        font-size: var(--font-size-12);
+    }
+    section.cledor-service > img{
+        width: 70%;
+    }
+    section.cledor-service > .txt-box{
+        padding-top: 3rem;
+    }
+    section.cledor-service > .txt-box > p:first-of-type{
+        font-size: var(--font-size-16);
+        line-height: 2.5rem;
+        font-weight: normal;
+    }
+    section.cledor-service > .txt-box > p:last-of-type{
+        padding-top: 1.5rem;
+        font-size: var(--font-size-12);
+        line-height: 1.9rem;
+    }
+    section.cledor-service > .txt-box > img{
+        width:70%;
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:641px){ /* Tablet */
+    
+    /* 상단 이미지 */
+    .subscribe-bg-top{
+        height: 44rem;
+    }
+    /* 정기구독 아이콘 박스 */
+    .cledor-subscribe > .subscribe-icon-box{
+        position: absolute;
+        top: -35rem;
+    }
+    .cledor-subscribe > .subscribe-icon-box > h3 span:first-of-type{
+        padding-bottom: 1rem;
+        font-size: var(--font-size-14);
+    }
+    .cledor-subscribe > .subscribe-icon-box > h3 span:last-of-type{
+        font-size: var(--font-size-24);
+    }
+    .cledor-subscribe > .subscribe-icon-box > ul{
+        padding-top: 2.5rem;
+        width: 55.6rem;
+        gap: 1.2rem;
+    }
+    .cledor-subscribe > .subscribe-icon-box > ul > li > img{
+        width: 13rem;
+    }
+    .cledor-subscribe > .subscribe-icon-box > ul > li > p:last-of-type{
+        padding-top:1.5rem;
+        font-size: var(--font-size-14);
+        line-height: 2.2rem;
+        color: var(--color-dark-gray);
+    }
+    /* 결제하기 박스 */
+    .cledor-subscribe > .payment-wrap{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .cledor-subscribe > .payment-wrap > .payment-container{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .cledor-subscribe > .payment-wrap .price-txt{
+        padding-top:1.8rem;
+        padding-bottom:2rem;
+        font-size: var(--font-size-12);
+    }
+    .cledor-subscribe > .payment-wrap .payment-box {
+        padding-bottom: 1.4rem;
+    }
+    .cledor-subscribe > .payment-wrap .payment-box > img{
+        width: 100%;
+    }
+    .cledor-subscribe > .payment-wrap .payment-box > div > div p{
+        padding-top:1.5rem;
+        font-size: var(--font-size-14);
+        line-height: 2.2rem;
+    }
+    /* 결제하기 버튼 */
+    .cledor-subscribe > .payment-wrap .payment-box > div > div a{
+        margin-top:1.2rem;
+        margin-bottom:2.2rem;
+        width:10rem;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        border-radius: 1.5rem;
+    }
+    /* 정기구독 결제박스 밑 내용 컨탠츠 */
+    section.cledor-service > .subscribe-bg-mid{
+        margin-top: 5rem;
+        height: 25rem;
+    }
+    section.cledor-service > p:first-of-type{
+        padding-top:4rem;
+        font-size: var(--font-size-24);
+    }
+    section.cledor-service > p:last-of-type{
+        padding-top:1.5rem;
+        padding-bottom:2rem;
+        font-size: var(--font-size-16);
+    }
+    section.cledor-service > img{
+        width: 70%;
+    }
+    section.cledor-service > .txt-box{
+        padding-top: 4rem;
+    }
+    section.cledor-service > .txt-box > p:first-of-type{
+        font-size: var(--font-size-24);
+        line-height: 3.8rem;
+    }
+    section.cledor-service > .txt-box > p:last-of-type{
+        padding-top: 1.5rem;
+        font-size: var(--font-size-16);
+        line-height: 2.5rem;
+    }
+    section.cledor-service > .txt-box > img{
+        width:70%;
+        padding-top: 3rem;
+    }
+}
